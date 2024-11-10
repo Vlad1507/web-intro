@@ -4,9 +4,6 @@ import com.example.web_intro.dto.employee.CreateEmployeeRequestDto;
 import com.example.web_intro.dto.employee.EmployeeDto;
 import com.example.web_intro.dto.employee.EmployeeWithoutSkillsDto;
 import com.example.web_intro.model.Employee;
-import com.example.web_intro.model.Skill;
-
-import java.util.List;
 
 public class EmployeeMapperImpl implements EmployeeMapper {
     private final DepartmentMapper departmentMapper;
