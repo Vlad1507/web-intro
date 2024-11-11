@@ -13,7 +13,7 @@ import java.util.List;
 // when you delete element from database just update value of column is_deleted but not delete entity
 @SQLDelete(sql = "UPDATE employees SET is_deleted = true WHERE id =?")
 // when you search for all elements but when element is deleted it won't be shown.
-// It says show all elements where field "is deleted" false means element exists.
+// It says show all elements where field "is_deleted" false means element exists.
 // Prevent to show deleted elements (is_deleted column = true)
 @SQLRestriction(value = "is_deleted=false") // simply filter deleted data. Always used to get entity from database (@Where(clause) is deprecated)
 @Table(name = "employees")

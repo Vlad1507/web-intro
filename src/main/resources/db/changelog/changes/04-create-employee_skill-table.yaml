@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-employee_skill-table
+      author: vlad_a
+      changes:
+        createTable:
+          tableName: employee_skill
+          columns:
+            - column:
+                name: employee_id
+                type: bigint
+                constraints:
+                  reference: employees(id)
+            - column:
+                name: skill_id
+                type: bigint
+                constraints:
+                  reference: skills(id)

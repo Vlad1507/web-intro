@@ -27,8 +27,14 @@ databaseChangeLog:
                 constraints:
                   unique: true
             - column:
-                name: skills
+                name: department_id
                 type: varchar(255)
+                constraints:
+                  foreignKeyName: fk_departments_id
+                  reference: departments(id)
+            - column:
+                name: skills_id
+                type: bigint
                 constraints:
                   foreignKeyName: fk_skills_id
                   references: skills(id)
