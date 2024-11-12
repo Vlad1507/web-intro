@@ -40,7 +40,7 @@ public class Employee {
     @ToString.Exclude
     @ManyToMany
     @JoinTable(
-            name = "employee.skill",
+            name = "employee_skill",
             joinColumns = @JoinColumn(name = "employee_id"),
             inverseJoinColumns = @JoinColumn(name = "skill_id")
     )

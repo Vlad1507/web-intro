@@ -10,9 +10,13 @@ databaseChangeLog:
                 name: employee_id
                 type: bigint
                 constraints:
+                  nullable: false
+                  foreignKeyName: fk_employee
                   reference: employees(id)
             - column:
                 name: skill_id
                 type: bigint
                 constraints:
+                  nullable: false
+                  foreignKeyName: fk_skill
                   reference: skills(id)
